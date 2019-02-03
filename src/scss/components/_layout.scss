@@ -1,0 +1,8 @@
+.layout {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr auto;
+    margin: 0 auto;
+    max-width: 48em;
+    min-height: 100vh;
+}

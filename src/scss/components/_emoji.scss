@@ -1,0 +1,23 @@
+.emoji {
+  animation-play-state: paused; 
+  animation: wave 250ms ease-in-out infinite alternate;
+  cursor: default;
+  display: block;
+  animation-play-state: paused;
+  margin-top: 0.125em;
+
+  @media screen and (min-width: $medium) {
+    display: inline-block;
+    margin: 0 0.25em;
+  }
+
+  &:hover {
+    animation-play-state: running;
+  }
+}
+
+@keyframes wave {
+  0% {transform: rotate(0deg);}
+  50% {transform: rotate(15deg)}
+  100% {transform: rotate(0deg)}
+}

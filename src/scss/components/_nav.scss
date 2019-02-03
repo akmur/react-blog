@@ -1,0 +1,28 @@
+.nav {
+  line-height: 1;
+}
+
+.nav__list {
+  text-align: center;
+}
+
+.nav__item {
+  display: inline-block;
+  margin: 0;
+  padding: 0 0.5em;
+}
+
+.nav__link {
+  border: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  @media screen and (min-width: $medium) {
+    font-size: 1.4rem;
+  }
+
+  .ui-dark & {
+    border: 0;
+  }
+}

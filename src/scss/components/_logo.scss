@@ -1,0 +1,84 @@
+.logo {
+  border: 0 !important;
+  position: relative;
+  transition: all 0.25s ease;
+  width: 6rem;
+
+  @media screen and (min-width: $small) {
+    width: 7rem;
+  }
+
+  @media screen and (min-width: $medium) {
+    width: 8.5rem;
+  }
+
+  &:hover {
+    border-color: transparent;
+  }
+
+  .ui-dark & {
+    border-color: get-color(whites);
+  }
+}
+
+.logo__triangle {
+  fill: get-color(whites);
+  left: 50%;
+  position: absolute;
+  stroke: get-color(blacks);
+  top: 0;
+  transform: translateX(-50%);
+  transition: all 0.25s ease;
+
+  .ui-dark & {
+    fill: get-color(blacks, dark);
+    stroke: get-color(whites);
+  }
+
+  .logo:hover & {
+    stroke: get-color(accent);
+  }
+}
+
+.logo__triangle--center {
+  width: 4rem;
+  z-index: 10;
+
+  @media screen and (min-width: $small) {
+    width: 6rem;
+  }
+
+  @media screen and (min-width: $medium) {
+    width: 7rem;
+  }
+}
+
+.logo__triangle--left,
+.logo__triangle--right {
+  top: 0.5rem;
+  width: 3rem;
+
+  @media screen and (min-width: $small) {
+    width: 4rem;
+  }
+
+  @media screen and (min-width: $medium) {
+    width: 5rem;
+  }
+}
+
+.logo__triangle--left {
+  transform: translateX(-85%);
+
+  .logo:hover & {
+    transform: translateX(-50%);
+  }
+}
+
+.logo__triangle--right {
+  transform: translateX(-15%);
+
+  .logo:hover & {
+    transform: translateX(-50%);
+  }
+}

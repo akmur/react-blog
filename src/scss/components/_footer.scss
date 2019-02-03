@@ -1,0 +1,28 @@
+.footer {
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.footer__text {
+  padding: 0 2em;
+
+  @media screen and (min-width: $medium) {
+    padding: 0;
+  }
+}
+
+.footer__link {
+  border-bottom: 1px solid get-color(accent);
+
+  &:hover {
+    border-bottom: 1px solid get-color(accent, dark);
+  }
+
+  .ui-dark & {
+    border-bottom: 1px dotted get-color(whites);
+
+    &:hover {
+      border-bottom: 1px dotted get-color(accent);
+    }
+  }
+}

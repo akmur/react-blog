@@ -1,0 +1,13 @@
+.switch {
+  background: get-color(accent);
+  position: static;
+  font-size: 1.25rem;
+  margin-bottom: 1em;
+
+  @media screen and (min-width: $medium) {
+    position: fixed;
+    bottom: auto;
+    top: 0;
+    right: 0;
+  }
+}

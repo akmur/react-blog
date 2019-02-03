@@ -1,0 +1,38 @@
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pageContent{
+  padding: 1em 0 0;
+
+  @media screen and (min-width: $medium){
+    padding: 1em 6em 2em;
+  }
+}
+
+.pageContent__content {
+  font-size: 1.8rem;
+
+  @media (min-width: $medium) {
+    font-size: 1.8rem;
+  }
+
+  @media (min-width: $large) {
+    font-size: 2rem;
+  }
+}
+
+.pageContent__title {
+  font-size: 2.5em;
+  margin-top: 0;
+
+  @media screen and (min-width: $small) {
+    margin-top: 0.67em;
+  }
+
+  @media screen and (min-width: $medium) {
+    font-size: 3em;
+  }
+}
