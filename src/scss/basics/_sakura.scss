@@ -8,6 +8,7 @@ body {
   font-weight: 300;
   line-height: 1.618;
   margin: auto;
+  min-height: 100vh;
 }
 
 @media (max-width: $medium) {

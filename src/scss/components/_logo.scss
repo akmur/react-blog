@@ -29,6 +29,7 @@
   top: 0;
   transform: translateX(-50%);
   transition: all 0.25s ease;
+  stroke-width: 2px;
 
   .ui-dark & {
     fill: get-color(blacks, dark);
