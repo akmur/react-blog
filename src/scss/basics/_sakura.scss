@@ -110,21 +110,16 @@ blockquote {
 
 img {
   max-width: 100%;
+  display: block;
 }
 
 /* Pre and Code */
-pre {
-  background-color: get-color(whites);
+pre,
+code {
+  background-color: get-color(blacks);
   display: block;
   overflow-x: auto;
   padding: 1em;
-}
-
-code {
-  background-color: get-color(whites);
-  font-size: 0.9em;
-  padding: 0 0.5em;
-  white-space: pre-wrap;
 }
 
 pre > code {

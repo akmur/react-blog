@@ -1,7 +1,7 @@
 .content {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .pageContent{
@@ -35,4 +35,11 @@
   @media screen and (min-width: $medium) {
     font-size: 3em;
   }
+}
+
+.pageContent__image {
+  margin-top: 2em;
+  margin-bottom: 2em;
+  margin-left: -4em;
+  margin-right: -4em;
 }
