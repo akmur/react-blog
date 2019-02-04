@@ -12,7 +12,7 @@ const About = () => {
         />
         <meta
           name="og:image"
-          content="https://filedn.com/lmWxu5DGgw0FbsUS7mWpc3S/site-image.jpg"
+          content="https://akmur.files.wordpress.com/2019/02/site-image.jpg"
         />
       </Helmet>
       <div className="contentBlock">
@@ -64,7 +64,7 @@ const About = () => {
         <div className="avatar">
           <img
             alt="Alex Muraro"
-            src="https://filedn.com/lmWxu5DGgw0FbsUS7mWpc3S/site-image.jpg"
+            src="https://akmur.files.wordpress.com/2019/02/site-image.jpg"
           />
         </div>
       </div>

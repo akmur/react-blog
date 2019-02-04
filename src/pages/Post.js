@@ -41,7 +41,7 @@ class Post extends React.Component {
           <meta name="description" content={metaDescription} />
           <meta
             name="og:image"
-            content="https://filedn.com/lmWxu5DGgw0FbsUS7mWpc3S/site-image.jpg"
+            content="https://akmur.files.wordpress.com/2019/02/site-image.jpg"
           />
         </Helmet>
         <h1 className="pageContent__title title title--h1">
