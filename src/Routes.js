@@ -14,7 +14,7 @@ class Routes extends React.Component {
           <Home path="/" />
           <About path="/about" />
           <Posts posts={this.props.posts} path="/posts" />
-          <Post path="/posts/:slug" />
+          <Post path="/posts/:id/:slug" />
         </AppWrapper>
       </Router>
     )

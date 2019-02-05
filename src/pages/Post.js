@@ -14,7 +14,7 @@ class Post extends React.Component {
   componentDidMount() {
     fetch(
       `https://public-api.wordpress.com/rest/v1.1/sites/akmur.wordpress.com/posts/${
-        this.props.location.state.id
+        this.props.id
       }`
     )
       .then(response => {

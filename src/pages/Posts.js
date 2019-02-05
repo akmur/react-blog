@@ -55,7 +55,7 @@ class Posts extends Component {
               <Link
                 className="postsList__link"
                 state={{ id: post.ID }}
-                to={`/posts/${post.slug}`}
+                to={`/posts/${post.ID}/${post.slug}`}
               >
                 <h2 className="postsList__title">{post.title}</h2>
                 <span className="postsList__date">
