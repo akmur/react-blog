@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from '@reach/router'
+import { Helmet } from 'react-helmet'
 import dayjs from 'dayjs'
 import relativeTime from 'dayjs/plugin/relativeTime'
 dayjs.extend(relativeTime)
@@ -35,6 +36,17 @@ class Posts extends Component {
   render() {
     return (
       <div className="postsList">
+        <Helmet>
+          <title>Posts - Alex Muraro - Frontend Developer</title>
+          <meta
+            name="description"
+            content="Posts - Alex Muraro - Frontend Developer"
+          />
+          <meta
+            name="og:image"
+            content="https://akmur.files.wordpress.com/2019/02/site-image.jpg"
+          />
+        </Helmet>
         <ul className="postsList__list">
           {this.state.loaded ? (
             ''

@@ -31,10 +31,17 @@ class Post extends React.Component {
   }
 
   render() {
-    const metaTitle = `${
-      this.state.post.title
-    } - Alessandro Muraro - Frontend Developer`
-    const metaDescription = `${striptags(this.state.post.content, [], '\n')}`
+    let metaTitle, metaDescription
+    if (this.state.loaded) {
+      metaTitle = `${
+        this.state.post.title.rendered
+      } - Alessandro Muraro - Frontend Developer`
+      metaDescription = `${striptags(
+        this.state.post.content.rendered,
+        [],
+        '\n'
+      )}`
+    }
 
     return (
       <div className="pageContent pageContent--post">
