@@ -1,6 +1,7 @@
 .postsList {
   margin-top: 3em;
   margin-bottom: 4em;
+  max-width: 38em;
 }
 
 .postsList__list {
@@ -47,6 +48,7 @@
 
   @media screen and (min-width: $medium) {
     font-size: 2.25em;
+    line-height: 1.25;
   }
 }
 

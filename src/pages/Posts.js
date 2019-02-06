@@ -6,10 +6,8 @@ dayjs.extend(relativeTime)
 
 class Posts extends Component {
   state = {
-    posts: {
-      posts: [],
-      loaded: false
-    }
+    posts: [],
+    loaded: false
   }
 
   componentDidMount() {
@@ -21,9 +19,7 @@ class Posts extends Component {
         loaded: true
       })
     } else {
-      fetch(
-        'https://public-api.wordpress.com/rest/v1.1/sites/akmur.wordpress.com/posts/?number=100'
-      )
+      fetch('https://muraro.xyz/wp/wp-json/wp/v2/posts?per_page=100')
         .then(response => {
           return response.json()
         })
@@ -50,14 +46,14 @@ class Posts extends Component {
               Loading...
             </div>
           )}
-          {this.state.posts.posts.map((post, index) => (
+          {this.state.posts.map((post, index) => (
             <li className="postsList__item" key={index}>
               <Link
                 className="postsList__link"
-                state={{ id: post.ID }}
-                to={`/posts/${post.ID}/${post.slug}`}
+                state={{ id: post.id }}
+                to={`/posts/${post.id}/${post.slug}`}
               >
-                <h2 className="postsList__title">{post.title}</h2>
+                <h2 className="postsList__title">{post.title.rendered}</h2>
                 <span className="postsList__date">
                   {dayjs().to(dayjs(post.date))}
                 </span>

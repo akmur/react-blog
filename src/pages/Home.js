@@ -6,8 +6,14 @@ const Home = () => {
     <div className="pageHome">
       <Helmet>
         <title>Alessandro Muraro - Frontend Developer</title>
-        <meta name="description" content="I am a frontend developer currently based in Aachen, Germany. I do websites." />
-        <meta name="og:image" content="https://filedn.com/lmWxu5DGgw0FbsUS7mWpc3S/site-image.jpg" />
+        <meta
+          name="description"
+          content="I am a frontend developer currently based in Aachen, Germany. I do websites."
+        />
+        <meta
+          name="og:image"
+          content="https://filedn.com/lmWxu5DGgw0FbsUS7mWpc3S/site-image.jpg"
+        />
       </Helmet>
       <div className="contentBlock contentBlock--home">
         <div className="contentBlock__preTitle u-center">
@@ -15,7 +21,7 @@ const Home = () => {
         </div>
         <h1 className="contentBlock__title u-center">
           I'm a frontend developer,
-          <br />I make websites.
+          <br />I do web.
           <span className="emoji" role="img" aria-label="waving hand">
             👋
           </span>

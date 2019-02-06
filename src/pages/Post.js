@@ -8,22 +8,24 @@ const striptags = require('striptags')
 
 class Post extends React.Component {
   state = {
-    post: { title: '', content: '', date: '' }
+    post: { title: '', content: '', date: '' },
+    loaded: false
   }
 
   componentDidMount() {
-    fetch(
-      `https://public-api.wordpress.com/rest/v1.1/sites/akmur.wordpress.com/posts/${
-        this.props.id
-      }`
-    )
+    fetch(`https://muraro.xyz/wp/wp-json/wp/v2/posts/${this.props.id}?_embed`)
       .then(response => {
         return response.json()
       })
       .then(post => {
-        console.log(post)
+        const hasThumbnail =
+          typeof post._embedded['wp:featuredmedia'] === 'undefined'
+            ? false
+            : true
         this.setState({
-          post
+          post,
+          hasThumbnail,
+          loaded: true
         })
       })
   }
@@ -44,8 +46,18 @@ class Post extends React.Component {
             content="https://akmur.files.wordpress.com/2019/02/site-image.jpg"
           />
         </Helmet>
+        {this.state.loaded ? (
+          ''
+        ) : (
+          <div className="loading">
+            <span role="img" aria-label="running man">
+              🏃‍♂️
+            </span>{' '}
+            Loading...
+          </div>
+        )}
         <h1 className="pageContent__title title title--h1">
-          {this.state.post.title}
+          {this.state.post.title.rendered}
         </h1>
         {this.state.post.date ? (
           <div className="pageContent__date date">
@@ -54,16 +66,19 @@ class Post extends React.Component {
         ) : (
           ''
         )}
-        {this.state.post.post_thumbnail ? (
+        {this.state.hasThumbnail ? (
           <div className="pageContent__image">
-            <img src={this.state.post.post_thumbnail.URL} alt="Cover" />
+            <img
+              src={this.state.post._embedded['wp:featuredmedia'][0].source_url}
+              alt="Cover"
+            />
           </div>
         ) : (
           ''
         )}
         <div
           className="pageContent__content"
-          dangerouslySetInnerHTML={{ __html: this.state.post.content }}
+          dangerouslySetInnerHTML={{ __html: this.state.post.content.rendered }}
         />
       </div>
     )
