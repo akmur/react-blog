@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Alex Muraro WP</title>
+	<atom:link href="https://alexmuraro.me/feed/" rel="self" type="application/rss+xml" />
+	<link>https://muraro.xyz/wp</link>
+	<description>Alex Muraro WP</description>
+	<lastBuildDate>Wed, 06 Feb 2019 23:24:51 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.0.3</generator>
+	<item>
+		<title>Switching this site to React + WordPress</title>
+		<link>https://alexmuraro.me/posts/switching-this-site-to-react-wordpress/</link>
+		<comments>https://alexmuraro.me/posts/switching-this-site-to-react-wordpress/#respond</comments>
+		<pubDate>Tue, 05 Feb 2019 09:39:13 +0000</pubDate>
+		<dc:creator><![CDATA[akmur]]></dc:creator>
+				<category><![CDATA[Articles]]></category>
+
+		<guid isPermaLink="false">https://akmur.wordpress.com/?p=1250</guid>
+		<description><![CDATA[Yesterday I have deployed a new version of my site. It looks exactly like before, but it has some important differences: I am using React + Reach Router instead of Vanilla JS and Navigo.js I ditched Contentful for WordPress.com a self hosted WordPress It is hosted on Netlify instead of Github Pages Why React + [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>Yesterday I have deployed a new version of my site. It looks exactly like before, but it has some important differences:</p>
+<ul>
+<li>I am using React + Reach Router instead of Vanilla JS and Navigo.js</li>
+<li>I ditched Contentful for <del datetime="2019-02-06T23:22:50+00:00">WordPress.com</del> a self hosted WordPress</li>
+<li>It is hosted on Netlify instead of Github Pages</li>
+</ul>
+<h3>Why React + Reach?</h3>
+<p>When I started my personal site relaunch project, a couple of months ago, I tried out a number of solutions, including React, but in the end I decided to ditch everything and go the Vanilla route, as I felt React was overkill.<br />
+After having grown more accustomed with React though during the last month, I started feeling that the fun-factor would have increased by using React, so I did.<br />prefix~textarea
+I then decided for <a href="https://reach.tech/router">Reach Router</a> because it feels more friendly and less bloated than React Router.<br />
+So, in the end, I still think React is overkill, but the overall javaScript size is around 50Kb gzipped, which is acceptable I think.</p>
+<h3>Ditching Contentful in favour of WordPress</h3>
+<p>When I started this new version of my blog, i went for <a href="https://www.contentful.com">Contentful</a> at first. Partly because I wanted a very fast response, partly because I wanted to try out the new kid on the block.</p>
+<p>However, after some playing around, I have resorted to using <a href="https://wordpress.org/">WordPress</a>, which provides free-to-use APIs. The publishing experience is much more polished on WordPress, media management is way better, the usage limit is much higher for the free tier, and I can export my content anytime in case I want a custom installation on a server of mine, while I&#8217;m locked-in with Contentful.<br />
+Granted, Contentful response feels maybe a bit faster, but that&#8217;s not a major concern.<br />
+I am using the cheapest managed hosting solution from NameCheap. For what I need, it&#8217;s fine.</p>
+<h3>Netlify</h3>
+<p>I was blown away by <a href="https://www.netlify.com/">Netlify</a>&#8216;s ease of use. It allows me to connect my Github repository to Netlify, runs the build process when I push to master, and automatically redirects all requests to /index.html. Wow.</p>
+<h3>Conclusions</h3>
+<p>All in all, I&#8217;m currently very happy of my React / WordPress combo. It allows for fun development, great performances and simple deployments, while retaining the great publishing experience of WordPress and the no-nonsense <a href="https://jamstack.org/">JAM stack</a> approach. Using WordPress also makes it easy to expand my blog with categories, tags, and plugins like Advanced Custom Fields in case I want to.<br />
+This is definitely the way I would go in case I had to do any &#8220;artisan&#8221; client work in 2019.</p>
+<p><em>Photo by <a href="https://unsplash.com/photos/PKEPAeMBOIU?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Thierry Meier</a> on <a href="https://unsplash.com/search/photos/sea?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Unsplash</a></em></p>
+]]></content:encoded>
+			<wfw:commentRss>https://alexmuraro.me/posts/switching-this-site-to-react-wordpress/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Timeworth</title>
+		<link>https://alexmuraro.me/posts/timeworth/</link>
+		<comments>https://alexmuraro.me/posts/timeworth/#respond</comments>
+		<pubDate>Thu, 17 Jan 2019 00:18:50 +0000</pubDate>
+		<dc:creator><![CDATA[akmur]]></dc:creator>
+				<category><![CDATA[Articles]]></category>
+
+		<guid isPermaLink="false">https://akmur.wordpress.com/?p=1232</guid>
+		<description><![CDATA[A few days ago I was wondering how much something would cost me in actual worked hours. So I built a little funny tool to roughly tell me how much I have to work, taking into consideration holidays. Here it goes: timeworth.netlify.com and here is a screenshot:]]></description>
+				<content:encoded><![CDATA[<p>A few days ago I was wondering how much something would cost me in actual worked hours. So I built a little funny tool to roughly tell me how much I have to work, taking into consideration holidays.</p>
+<p>Here it goes:</p>
+<p><a href="https://timeworth.netlify.com/">timeworth.netlify.com</a></p>
+<p>and here is a screenshot:</p>
+<p><a href="https://alexmuraro.me/wp-content/uploads/2019/02/vgpxekp-1.png"><img class="alignnone size-medium wp-image-1234" src="https://alexmuraro.me/wp-content/uploads/2019/02/vgpxekp-1.png?w=300" alt="" width="300" height="142" srcset="https://alexmuraro.me/wp-content/uploads/2019/02/vgpxekp-1.png 3360w, https://alexmuraro.me/wp-content/uploads/2019/02/vgpxekp-1-300x142.png 300w, https://alexmuraro.me/wp-content/uploads/2019/02/vgpxekp-1-768x363.png 768w, https://alexmuraro.me/wp-content/uploads/2019/02/vgpxekp-1-1024x483.png 1024w, https://alexmuraro.me/wp-content/uploads/2019/02/vgpxekp-1-1568x740.png 1568w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+]]></content:encoded>
+			<wfw:commentRss>https://alexmuraro.me/posts/timeworth/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Coding is easy</title>
+		<link>https://alexmuraro.me/posts/coding-is-easy/</link>
+		<comments>https://alexmuraro.me/posts/coding-is-easy/#respond</comments>
+		<pubDate>Wed, 02 Jan 2019 00:17:35 +0000</pubDate>
+		<dc:creator><![CDATA[akmur]]></dc:creator>
+				<category><![CDATA[Articles]]></category>
+
+		<guid isPermaLink="false">https://akmur.wordpress.com/?p=1229</guid>
+		<description><![CDATA[Coding websites is easy. There, I said it. With this post I just want to encourage people out there that might be hesitant to get started in a web development career, because they believe the job is &#8220;too hard&#8221;. Let me assure you, it is not. Surely it is not harder than other jobs, and people [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>Coding websites <strong>is easy</strong>. There, I said it.</p>
+<p>With this post I just want to encourage people out there that might be hesitant to get started in a web development career, because they believe the job is &#8220;too hard&#8221;. Let me assure you, it is not.</p>
+<p>Surely it is not harder than other jobs, and people who code are not geniuses by default.</p>
+<p>Sure, prepare yourself to get stuck (a lot), to not understand concepts (a lot) and to feel like a cheater when you copy other people&#8217;s code (a lot), but this said, coding is not hard. It involves plenty of trial and error, and it can be related to solving puzzles and building using Lego blocks.</p>
+<h2>Do you enjoy computers?</h2>
+<p>If you already have an interest in computers, tweaking softwares, installing operating systems, fiddling with settings, rooting phones, than you most probably can do this job.</p>
+<h2>The main skills you&#8217;ll need</h2>
+<p>The single biggest skill you need as a coder is that of problem solving. If you are the person people go to when their computers or phones have some trouble, then you most probably have these problem solving skills. The second skill you absolutely need is being able to Google to find solutions to your problems. The third one would be being able to read and write english.</p>
+<h2>Would you like to create stuff?</h2>
+<p>So, if the idea of creating websites that people can actually use (and getting paid for that) is appealing to you, then by all means get started in this career. Even if you are not a teenager, even if you are 30 or 40 or 50 or whatever, it&#8217;s never too late to start doing something you actually enjoy, especially if you&#8217;ve always thought about it.</p>
+<h2>Join a local Meetup</h2>
+<p>If you live in or nearby a big enough town, chances are there is already a meetup about frontend development, usually meeting once per month to discuss things and get together. Just go, and be open about you being new to the craft. 99% of the people will be supportive, and you will make friends.</p>
+<h2>Ask for help</h2>
+<p>Do not be afraid to ask for help when you get lost, but always do your homework before asking (meaning, try to solve a problem on your own first). Resources like Stack Overflow are very helpful in getting you answers from people who enjoy answering them.</p>
+<h2>Some resources to get started</h2>
+<p>Just a few ideas that might help you orientate yourself in the seeming neverending sea of information about web development.</p>
+<ul>
+<li>Consider signing up for a <a href="https://teamtreehouse.com/">Team Treehouse</a> account, their video courses are excellent.</li>
+<li>Follow <a href="https://gomakethings.com/">Go Make Things</a> by Chris Ferdinandi for all things JavaScript</li>
+<li>Follow <a href="https://www.smashingmagazine.com/">Smashing Magazine</a> and <a href="https://css-tricks.com/">CSS Tricks</a> for anything related to web development.</li>
+</ul>
+<h2>Beware the impostor syndrome</h2>
+<p>A time will come when you will fill like an impostor. This is the impostor syndrome, Google it to find lots of blog entries about it.</p>
+<p>You will think &#8220;I am worst than the others&#8221;, &#8220;I should not do this job&#8221;, &#8220;I am a fraud.&#8221;. These thoughts will start cropping up when your skills are improving, they probably reflect the fact that you realize you will never know everything.</p>
+<p>Just know that these thoughts are normal, they occur to every developer. However, they also are not true. Learn to live with them, and don&#8217;t give them too much weight.</p>
+<h2>Ask me anything</h2>
+<p>Feel free to hit me up with any question you might have, especially when starting out. On Twitter I am <a href="https://twitter.com/akmur">@akmur</a>, I&#8217;ll do my best to point you in the right direction.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://alexmuraro.me/posts/coding-is-easy/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>A user guide to working with me</title>
+		<link>https://alexmuraro.me/posts/a-user-guide-to-working-with-me/</link>
+		<comments>https://alexmuraro.me/posts/a-user-guide-to-working-with-me/#respond</comments>
+		<pubDate>Sun, 16 Dec 2018 00:16:23 +0000</pubDate>
+		<dc:creator><![CDATA[akmur]]></dc:creator>
+				<category><![CDATA[Articles]]></category>
+
+		<guid isPermaLink="false">https://akmur.wordpress.com/?p=1226</guid>
+		<description><![CDATA[I recently started as a frontend developer at Energieloft (a cool startup in the Aachen area with the really neat mission of enabling networking among companies to create innovative products) and I thought this could be a good occasion to write down something like a user guide to working with me. I got the idea about this [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>I recently started as a frontend developer at <a href="https://energieloft.de/">Energieloft</a> (a cool startup in the Aachen area with the really neat mission of enabling networking among companies to create innovative products) and I thought this could be a good occasion to write down something like a user guide to working with me.</p>
+<p>I got the idea about this user guide from these posts by <a href="https://medium.com/@cassierobinson/a-user-manual-for-me-d3a851fbc694">Cassie Robinson</a> and <a href="https://medium.com/@PeteVowles/working-with-me-a-user-manual-b07f1b47f8f9">Pete Vowles</a>, which should be credited.</p>
+<h3>The most important thing about me</h3>
+<p>Let me introduce this user guide by saying the <strong>most important thing</strong>first: I really like pragmatic and constructive discussion, so whatever the problem is, let&#8217;s just discuss it with an open mind. It&#8217;s easy for me to change my mind if the other idea has merits, I am attached to my beliefs as long as I think they have value; I value the success of my team over my own views, every time.</p>
+<h3>What makes me happy</h3>
+<ul>
+<li>Attention to detail.</li>
+<li>Caring for the users.</li>
+<li>Caring for my colleagues.</li>
+<li>Good, obvious, common sense choices.</li>
+<li>Documentation</li>
+<li>Simple and pragmatic solutions.</li>
+<li>Enthusiastic people.</li>
+<li>Winning (personally and as a team).</li>
+<li>Improvement.</li>
+<li>Sharing knowledge without being smug about it.</li>
+</ul>
+<h3>What makes me sad</h3>
+<ul>
+<li>Lack of responsibility.</li>
+<li>Lack of empathy for the colleagues.</li>
+<li>Lack of care for the product.</li>
+<li>Lack of empathy for the user.</li>
+<li>Lack of direction.</li>
+<li>Boredom.</li>
+<li>Inconsistencies.</li>
+<li>Blaming.</li>
+</ul>
+<h3>What I need</h3>
+<ul>
+<li>I need time to think. I am often not useful in situations where fast response time is needed and immediate answers are required. I generally cannot come up with immediate answers that are also good, unless I am really confident with the topic (which means I had time to think about it, by the way). I will usually come up with a good idea an hour, or a day, later.</li>
+<li>I am very bad with remembering names, a picture in your chat profile helps greatly.</li>
+<li>To understand the direction the company is moving, and why.</li>
+<li>Understanding what others are working on, to get the full picture.</li>
+<li>Feedback especially when I do something that hurts other people&#8217;s feelings. Technical feedback is also great, with examples it&#8217;s even better.</li>
+</ul>
+<h3>Contacting each other</h3>
+<ul>
+<li>I don&#8217;t check my email more than 2 or 3 times a day. If something is really urgent, chat me or just tell me.</li>
+<li>My favourite communication method is chat, since I am a bit of an introvert. This for some reason does not apply to technical matters though, as I am always up to discuss those in person.</li>
+</ul>
+<h3>What are my quirks</h3>
+<ul>
+<li>Oftentimes I like to go for a long walk instead of being social and having lunch with colleagues. I still love you all despite this.</li>
+<li>I hate unfinished business. I would rarely leave a problem hanging without a solution, I can&#8217;t find peace until it is solved or at least until I know which direction to go.</li>
+<li>I love creating technical documentation for processes.</li>
+<li>I don&#8217;t have a very good memory (that&#8217;s why I write documentation and notes for stuff) and I always need to look up things. I&#8217;m a good Googler.</li>
+<li>I love sugary things, but I have diabetes (well managed and dealt with through tablet medications, but still) so try not to feed me too much sugar, and if you see me eating sugar too often please stop me, sometimes I get stuck in a sugary loop.</li>
+</ul>
+<h3>What are my working hours</h3>
+<ul>
+<li>From 8.30 to 17.30 generally. Usually I keep thinking about work-related problems when I am not in the office, so that I am ready to put my ideas into practice the following day. However I will generally not check and answer emails outside those hours. If there is any urgency, please send me a chat or SMS message.</li>
+<li>When I work from home, I also work between 8.30 and 17.30, with lunch break around 13.</li>
+</ul>
+<h3>A few more words</h3>
+<p>I hope all of the above makes sense, and that it was a good idea writing it all down. I will try to update it as things inevitably change and evolve. Hopefully this will make it easier for my colleagues to understand me, I surely wrote it with the best of intentions and a open mind and heart.</p>
+<p><em>Photo by <a href="https://unsplash.com/photos/DgMVKfwvffE?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Rafa Prada</a> on <a href="https://unsplash.com/">Unsplash</a></em></p>
+]]></content:encoded>
+			<wfw:commentRss>https://alexmuraro.me/posts/a-user-guide-to-working-with-me/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>My SCSS file structure</title>
+		<link>https://alexmuraro.me/posts/my-scss-file-structure/</link>
+		<comments>https://alexmuraro.me/posts/my-scss-file-structure/#respond</comments>
+		<pubDate>Fri, 14 Dec 2018 00:14:58 +0000</pubDate>
+		<dc:creator><![CDATA[akmur]]></dc:creator>
+				<category><![CDATA[Articles]]></category>
+
+		<guid isPermaLink="false">https://akmur.wordpress.com/?p=1223</guid>
+		<description><![CDATA[After having created folder structures for my SCSS files many times for many different projects over the years, I decided to create a Github repository so that it&#8217;s easier for me to get started and improve; hopefully it can be useful to somebody else trying to wrap his/her head around it as well. First of [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>After having created folder structures for my SCSS files many times for many different projects over the years, I decided to create a Github repository so that it&#8217;s easier for me to get started and improve; hopefully it can be useful to somebody else trying to wrap his/her head around it as well.</p>
+<p>First of all, <a title="Scss Structure Github Repo" href="https://github.com/akmur/scss-structure">here is the repository</a> that you can clone to get started, and here below is an image that shows how the folder structure looks like.</p>
+<p><a href="https://alexmuraro.me/wp-content/uploads/2019/02/3pm3of9.png"><img class="alignnone size-medium wp-image-1224" src="https://alexmuraro.me/wp-content/uploads/2019/02/3pm3of9.png?w=300" alt="" width="300" height="264" srcset="https://alexmuraro.me/wp-content/uploads/2019/02/3pm3of9.png 337w, https://alexmuraro.me/wp-content/uploads/2019/02/3pm3of9-300x264.png 300w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>The main ideas behind the organization of these files come from a couple of resources with a few tweaks, and 99% of the credit goes to them of course.</p>
+<ul>
+<li><a href="https://sass-guidelin.es/#the-7-1-pattern">SASS Guidelines: 7-in-1 pattern</a></li>
+<li><a href="https://www.xfive.co/blog/itcss-scalable-maintainable-css-architecture/">ITCSS: Scalable and maintainable Scss architecture</a></li>
+</ul>
+<p>I am basically merging the two approaches, in order to have something that makes a lot of sense yet is easier to understand than the resources above. During the years I always found that the first approach was great but could have done with a bit more modularity, while the second one is a bit too technical to wrap one&#8217;s head around.</p>
+<p>So these are my folders:</p>
+<h3>01-Abstracts</h3>
+<p>Here you can find mixins, extends, placeholders and variables and all that code that doesn&#8217;t actually outputs CSS.</p>
+<h3>02-Base</h3>
+<p>In this folder you can put generic reset styles like normalize.css, starters like Bootstrap or Bulma, typographic starters, stuff like fontawesome, and so on.</p>
+<h3>03-Elements</h3>
+<p>This folder contains styling for simple basic elements like buttons, links, titles, inputs. These are &#8220;units&#8221;. If more elements are merged, they go into the next folder.</p>
+<h3>04-Components</h3>
+<p>UI components are composed of elements. This means these components made up of elements. An example of a component is a group of buttons, a form, a header. This is where majority of our work takes place.</p>
+<h3>05-Pages</h3>
+<p>This folder contains code specific to certain pages. For example, some custom styling for the layout of the customer account.</p>
+<h3>06-Utilities</h3>
+<p>Utilities are very specific classes used to change appearance of some element. They should be prefixed with &#8220;u&#8221;. For example, .u-center could be used to center some text, u-uppercase to make it uppercase, u-floatLeft to float some image on the left, and so on.</p>
+<h3>07-Print</h3>
+<p>This folder contains print specific CSS.</p>
+<h3>77-Vendors</h3>
+<p>Here you can add third party code for plugins like slideshows, for example, while Bootstrap would go in the &#8220;02-Base&#8221; folder because it acts like a reset.</p>
+<h3>88-Legacy</h3>
+<p>This folder contains code for older browsers.</p>
+<h3>99-Overrides</h3>
+<p>Overrides for any of the folders above go here, however this is mainly for plugins. It should not be abused.</p>
+<p>So far this file organization has proved to be quite good, easy to understand yet complex enough to allow for enough flexibility. Let me know if you have ideas for improvements.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://alexmuraro.me/posts/my-scss-file-structure/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Welcome to my new blog</title>
+		<link>https://alexmuraro.me/posts/welcome-to-my-new-blog/</link>
+		<comments>https://alexmuraro.me/posts/welcome-to-my-new-blog/#respond</comments>
+		<pubDate>Tue, 23 Oct 2018 00:12:24 +0000</pubDate>
+		<dc:creator><![CDATA[akmur]]></dc:creator>
+				<category><![CDATA[Articles]]></category>
+
+		<guid isPermaLink="false">https://akmur.wordpress.com/?p=1217</guid>
+		<description><![CDATA[Today I have launched my new blog. It is not simply a new theme (or actually, two themes, try out the &#8220;switch theme button&#8221; in the top right corner); it also has got an entirely new technical architecture to go with it. But first, I want to take the chance to go through all the [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>Today I have launched my new blog. It is not simply a new theme (or actually, two themes, try out the &#8220;switch theme button&#8221; in the top right corner); it also has got an entirely new technical architecture to go with it.</p>
+<p>But first, I want to take the chance to go through all the designs I did for this site over the years, with a little help from the Wayback Machine. Unfortunately some iterations have been lost, but it is still fun to look at:</p>
+<p><a href="https://web.archive.org/web/20120114220703/http://inteoria.net/">2012 Theme (using a different domain)</a></p>
+<p><a href="https://alexmuraro.me/wp-content/uploads/2019/02/acmpxm5.jpg"><img class="alignnone wp-image-1218 size-large" src="https://alexmuraro.me/wp-content/uploads/2019/02/acmpxm5.jpg?w=700" alt="" width="700" height="383" srcset="https://alexmuraro.me/wp-content/uploads/2019/02/acmpxm5.jpg 2880w, https://alexmuraro.me/wp-content/uploads/2019/02/acmpxm5-300x164.jpg 300w, https://alexmuraro.me/wp-content/uploads/2019/02/acmpxm5-768x420.jpg 768w, https://alexmuraro.me/wp-content/uploads/2019/02/acmpxm5-1024x560.jpg 1024w, https://alexmuraro.me/wp-content/uploads/2019/02/acmpxm5-1568x857.jpg 1568w" sizes="(max-width: 700px) 100vw, 700px" /></a></p>
+<p><a href="https://web.archive.org/web/20140802152258/http://alexmuraro.me/">2014 Theme</a></p>
+<p><a href="https://alexmuraro.me/wp-content/uploads/2019/02/gud0m6b.jpg"><img class="alignnone wp-image-1219 size-large" src="https://alexmuraro.me/wp-content/uploads/2019/02/gud0m6b.jpg?w=700" alt="" width="700" height="384" srcset="https://alexmuraro.me/wp-content/uploads/2019/02/gud0m6b.jpg 2838w, https://alexmuraro.me/wp-content/uploads/2019/02/gud0m6b-300x165.jpg 300w, https://alexmuraro.me/wp-content/uploads/2019/02/gud0m6b-768x422.jpg 768w, https://alexmuraro.me/wp-content/uploads/2019/02/gud0m6b-1024x562.jpg 1024w, https://alexmuraro.me/wp-content/uploads/2019/02/gud0m6b-1568x861.jpg 1568w" sizes="(max-width: 700px) 100vw, 700px" /></a></p>
+<p><a href="https://web.archive.org/web/20150511110509/http://alexmuraro.me:80/">2015 Theme</a></p>
+<p><a href="https://alexmuraro.me/wp-content/uploads/2019/02/pjxin1o.png"><img class="alignnone wp-image-1220 size-large" src="https://alexmuraro.me/wp-content/uploads/2019/02/pjxin1o.png?w=700" alt="" width="700" height="386" srcset="https://alexmuraro.me/wp-content/uploads/2019/02/pjxin1o.png 2834w, https://alexmuraro.me/wp-content/uploads/2019/02/pjxin1o-300x165.png 300w, https://alexmuraro.me/wp-content/uploads/2019/02/pjxin1o-768x423.png 768w, https://alexmuraro.me/wp-content/uploads/2019/02/pjxin1o-1024x564.png 1024w, https://alexmuraro.me/wp-content/uploads/2019/02/pjxin1o-1568x864.png 1568w" sizes="(max-width: 700px) 100vw, 700px" /></a></p>
+<p><a href="https://web.archive.org/web/20170928062210/https://alexmuraro.me/">2017 Theme</a></p>
+<p><a href="https://alexmuraro.me/wp-content/uploads/2019/02/srr08yn.png"><img class="alignnone wp-image-1221 size-large" src="https://alexmuraro.me/wp-content/uploads/2019/02/srr08yn.png?w=700" alt="" width="700" height="372" srcset="https://alexmuraro.me/wp-content/uploads/2019/02/srr08yn.png 2840w, https://alexmuraro.me/wp-content/uploads/2019/02/srr08yn-300x159.png 300w, https://alexmuraro.me/wp-content/uploads/2019/02/srr08yn-768x408.png 768w, https://alexmuraro.me/wp-content/uploads/2019/02/srr08yn-1024x544.png 1024w, https://alexmuraro.me/wp-content/uploads/2019/02/srr08yn-1568x833.png 1568w" sizes="(max-width: 700px) 100vw, 700px" /></a></p>
+<p>Talking about the technological side, the site has been powered by WordPress for years, until early 2018 when I switched it to a static site, still generated from WordPress.</p>
+<p>So, this morning I am deploying the version of the site you can see now. It is a purely frontend website, with its content pulled from <a title="Contentful" href="https://www.contentful.com/">Contentful</a>. I have decided not to use any frontend framework after having played around with React, Preact, React router, and Next.js. It was fun to implement my site with different tools, and I learnt a lot during the process, but in the end I decided all that stuff was overkill, and went with vanilla JavaScript. The only JavaScript library I use is <a href="https://github.com/krasimir/navigo">Navigo.js</a> for routing.</p>
+<p>I feel really happy with the result, I like the new design and the site is super fast. Plus, I can create new posts just by creating new markdown files. Google can even index JavaScript rendered pages, so what&#8217;s not to love? <img src="https://s.w.org/images/core/emoji/11/72x72/1f642.png" alt="🙂" class="wp-smiley" style="height: 1em; max-height: 1em;" /></p>
+]]></content:encoded>
+			<wfw:commentRss>https://alexmuraro.me/posts/welcome-to-my-new-blog/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Search with Google instead</title>
+		<link>https://alexmuraro.me/posts/search-with-google-instead/</link>
+		<comments>https://alexmuraro.me/posts/search-with-google-instead/#respond</comments>
+		<pubDate>Wed, 08 Aug 2018 00:09:51 +0000</pubDate>
+		<dc:creator><![CDATA[akmur]]></dc:creator>
+				<category><![CDATA[Articles]]></category>
+
+		<guid isPermaLink="false">https://akmur.wordpress.com/?p=1214</guid>
+		<description><![CDATA[As a Duckduckgo user, I sometimes (like, a couple of times a day) feel like I want to give Google a try to see if I get better/different results. Since I got tired of copy/pasting my query, opening a new tab, go to google.com, and paste my query, I decided to create a little extension [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>As a Duckduckgo user, I sometimes (like, a couple of times a day) feel like I want to give Google a try to see if I get better/different results.</p>
+<p>Since I got tired of copy/pasting my query, opening a new tab, go to google.com, and paste my query, I decided to create a little extension that does it for me. Just click on the blue button, and a new tab with your search within Google opens up.</p>
+<p><a href="https://alexmuraro.me/wp-content/uploads/2019/02/dn4llky.png"><img class="alignnone size-medium wp-image-1215" src="https://alexmuraro.me/wp-content/uploads/2019/02/dn4llky.png?w=300" alt="" width="300" height="168" srcset="https://alexmuraro.me/wp-content/uploads/2019/02/dn4llky.png 800w, https://alexmuraro.me/wp-content/uploads/2019/02/dn4llky-300x168.png 300w, https://alexmuraro.me/wp-content/uploads/2019/02/dn4llky-768x431.png 768w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>It is called <strong>&#8220;Search with Google instead&#8221;</strong> and it can be downloaded from the Google extensions store.</p>
+<p><a href="https://chrome.google.com/webstore/detail/search-with-google-instea/cdfkjclhhojbgnpidbejchhklnjbjfhh?hl=en-GB">You can find it here</a></p>
+<p>PS: The extension also works with Bing.</p>
+<p>PPS: I have been told Duckduckgo supports !bang queries. That is super, but still I think my extension solves a little problem for those quicker with their mouse than their keyboard.</p>
+]]></content:encoded>
+			<wfw:commentRss>https://alexmuraro.me/posts/search-with-google-instead/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Come on Valve, fix those icons</title>
+		<link>https://alexmuraro.me/posts/come-on-valve-fix-those-icons/</link>
+		<comments>https://alexmuraro.me/posts/come-on-valve-fix-those-icons/#respond</comments>
+		<pubDate>Thu, 15 Mar 2018 00:06:40 +0000</pubDate>
+		<dc:creator><![CDATA[akmur]]></dc:creator>
+				<category><![CDATA[Articles]]></category>
+
+		<guid isPermaLink="false">https://akmur.wordpress.com/?p=1209</guid>
+		<description><![CDATA[Update 24th October 2018: This is not the case anymore! Yay! The steam client has been updated, not sure when it happened, but it has happened! Hooray! Maybe it&#8217;s my OCD, but you know what is the main reason i don&#8217;t buy any game from Steam? No, it&#8217;s not that I am on a Mac. [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p><em>Update 24th October 2018: This is not the case anymore! Yay! The steam client has been updated, not sure when it happened, but it has happened! Hooray!</em></p>
+<p>Maybe it&#8217;s my OCD, but you know what is the main reason i don&#8217;t buy any game from Steam? No, it&#8217;s not that I am on a Mac.</p>
+<p>Also, it&#8217;s not because Steam is a slow and bloated application, no.</p>
+<p>The real reason are those icon in the top right corner, the ones used to close, minimize and maximize applications.</p>
+<p>These ones:</p>
+<p><a href="https://alexmuraro.me/wp-content/uploads/2019/02/jtzlwae.png"><img class="alignnone size-medium wp-image-1210" src="https://alexmuraro.me/wp-content/uploads/2019/02/jtzlwae.png?w=300" alt="" width="300" height="213" srcset="https://alexmuraro.me/wp-content/uploads/2019/02/jtzlwae.png 768w, https://alexmuraro.me/wp-content/uploads/2019/02/jtzlwae-300x213.png 300w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>You see, on current macOS those icons are nice and flat. Actually, they’ve been like that since 2014 when Yosemite was introduced.</p>
+<p>Now, let me show you Steam for Mac.</p>
+<p><a href="https://alexmuraro.me/wp-content/uploads/2019/02/ytu0e05.png"><img class="alignnone size-medium wp-image-1211" src="https://alexmuraro.me/wp-content/uploads/2019/02/ytu0e05.png?w=300" alt="" width="300" height="211" srcset="https://alexmuraro.me/wp-content/uploads/2019/02/ytu0e05.png 800w, https://alexmuraro.me/wp-content/uploads/2019/02/ytu0e05-300x211.png 300w, https://alexmuraro.me/wp-content/uploads/2019/02/ytu0e05-768x540.png 768w" sizes="(max-width: 300px) 100vw, 300px" /></a></p>
+<p>Yes, they are still the old pre-2014 icons.</p>
+<p><a href="https://alexmuraro.me/wp-content/uploads/2019/02/crtmgle.png"><img class="alignnone size-full wp-image-1212" src="https://alexmuraro.me/wp-content/uploads/2019/02/crtmgle.png" alt="" width="174" height="66" /></a></p>
+<p>Why. Why did Valve decide not to update the icons on their Steam client over these years?</p>
+<p>Is it too hard? Should I really think that the people who created Portal are unable to replace three icons? Clearly not.</p>
+<p>Do they have no employees or interns that can spend a few hours working on these icons? Also, clearly not the case, right? It’s freaking Valve we&#8217;re talking about.</p>
+<p>So the only option left is they don&#8217;t care enough. And I hate giving my money to companies that do not care and cannot find one hour over the course of 4 years to improve their customer experience.</p>
+<p>So I wonder, how many people are like me? This might be a very cost-effective UI improvement for Valve, especially because Mac people are fixated with UI consistency and stuff like this, it’s the main reason they get a Mac after all.</p>
+<p>Actually, those icons are the reason i started using GOG in the first place. It surely helps that GOG is better than Steam in so many other ways, so I wouldn&#8217;t go back now, but still&#8230; why, Valve?</p>
+]]></content:encoded>
+			<wfw:commentRss>https://alexmuraro.me/posts/come-on-valve-fix-those-icons/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>JAM stack Meetup presentation</title>
+		<link>https://alexmuraro.me/posts/jam-stack-meetup-presentation/</link>
+		<comments>https://alexmuraro.me/posts/jam-stack-meetup-presentation/#respond</comments>
+		<pubDate>Sat, 03 Feb 2018 00:05:58 +0000</pubDate>
+		<dc:creator><![CDATA[akmur]]></dc:creator>
+				<category><![CDATA[Articles]]></category>
+
+		<guid isPermaLink="false">https://akmur.wordpress.com/?p=1207</guid>
+		<description><![CDATA[On the 15th of September I gave a presentation about the JAM stack at the Aachen Web Makers Meetup, which was followed by a very interesting discussion about pros, cons and potential pitfalls of this approach. Here is the presentation itself: speakerdeck.com/akmur/the-jam-stack]]></description>
+				<content:encoded><![CDATA[<p>On the 15th of September I gave a presentation about the JAM stack at the Aachen Web Makers Meetup, which was followed by a very interesting discussion about pros, cons and potential pitfalls of this approach.</p>
+<p>Here is the presentation itself:</p>
+<p><a href="https://speakerdeck.com/akmur/the-jam-stack">speakerdeck.com/akmur/the-jam-stack</a></p>
+]]></content:encoded>
+			<wfw:commentRss>https://alexmuraro.me/posts/jam-stack-meetup-presentation/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Using Linters</title>
+		<link>https://alexmuraro.me/posts/using-linters/</link>
+		<comments>https://alexmuraro.me/posts/using-linters/#respond</comments>
+		<pubDate>Sat, 04 Feb 2017 12:30:36 +0000</pubDate>
+		<dc:creator><![CDATA[akmur]]></dc:creator>
+				<category><![CDATA[Articles]]></category>
+
+		<guid isPermaLink="false">http://alexmuraro.me/?p=1051</guid>
+		<description><![CDATA[What is a linter?
+
+According to google, the definition of "lint" is "short, fine fibres which separate from the surface of cloth or yarn during processing."
+
+However for us programmers a linter is a software that checks your code for errors, bad practices and issues and gives you a warning when you make a mistake. A linter can be configurable according to rules that you decide.]]></description>
+				<content:encoded><![CDATA[<h3>What is a linter?</h3>
+<p>According to google, the definition of &#8220;lint&#8221; is <em>&#8220;short, fine fibres which separate from the surface of cloth or yarn during processing.&#8221;</em></p>
+<p>However for us programmers a <strong>linter</strong> is a software that checks your code for errors, bad practices, bad formatting and logical issues, and gives you a warning when you make a mistake. A linter can be configurable according to rules that you decide.</p>
+<p><span id="more-1051"></span></p>
+<h3><strong>Why use a linter?</strong></h3>
+<p>Well, there are quite a few reasons:</p>
+<ul>
+<li>to write better code</li>
+<li>to write good code more easily</li>
+<li>to learn a programming language</li>
+<li>to write code aesthetically consistent</li>
+<li>to follow conventions</li>
+<li>to share code within a team without losing your mind</li>
+</ul>
+<p>Let me double stress the fact that linters are especially important if you work in a team (meaning not alone), because by following some rules you can make sure that your code looks the same regardless of who&#8217;s writing the code.</p>
+<p>And finally, let me triple stress that linters are super good to learn how to code as they point out issues while you type (I especially find JavaScript linters useful for this reason).</p>
+<h3>How does a linter look like?</h3>
+<p>A (JavaScript) linter looks like this (screenshot courtesy of <a href="https://code.visualstudio.com/Docs/languages/javascript" target="_blank" rel="noopener">Visual Studio Code by Microsoft</a>). Please notice the warning in the lower part of the screen. By clicking on the error there, you can get to the line containing the issue.<br />
+The error position is also specified within parenthesis, in this case it is 7,12 (line 7, char 12).</p>
+<p><img class=" size-full wp-image-1081 aligncenter" src="https://alexmuraro.me/wp-content/uploads/2017/02/javascript_eslint_warning.png" alt="javascript_eslint_warning" width="1194" height="610" srcset="https://alexmuraro.me/wp-content/uploads/2017/02/javascript_eslint_warning.png 1194w, https://alexmuraro.me/wp-content/uploads/2017/02/javascript_eslint_warning-300x153.png 300w, https://alexmuraro.me/wp-content/uploads/2017/02/javascript_eslint_warning-768x392.png 768w, https://alexmuraro.me/wp-content/uploads/2017/02/javascript_eslint_warning-1024x523.png 1024w" sizes="(max-width: 1194px) 100vw, 1194px" /></p>
+<p>While a sass linter looks like this (screenshot courtesy of <a href="http://stackoverflow.com/questions/41420931/sass-lint-yml-disabled-rules-are-showing-as-infos-rather-than-absent" target="_blank" rel="noopener">Stack Overflow</a>)</p>
+<p><img class="alignnone size-full wp-image-1085" src="https://alexmuraro.me/wp-content/uploads/2017/02/hd1qq.jpg" alt="hd1qq" width="1492" height="1443" srcset="https://alexmuraro.me/wp-content/uploads/2017/02/hd1qq.jpg 1492w, https://alexmuraro.me/wp-content/uploads/2017/02/hd1qq-300x290.jpg 300w, https://alexmuraro.me/wp-content/uploads/2017/02/hd1qq-768x743.jpg 768w, https://alexmuraro.me/wp-content/uploads/2017/02/hd1qq-1024x990.jpg 1024w" sizes="(max-width: 1492px) 100vw, 1492px" /></p>
+<h3>How to use a linter?</h3>
+<p>Depending on your tool of choice, there are different ways to install and use a linter. To have a working linter for JavaScript and Sass, you need to:</p>
+<ul>
+<li>Install <a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node</a> on your machine if you haven&#8217;t already.</li>
+<li>Install the linters globally using the node package manager (aka NPM)
+<ul>
+<li>to install ESlint (the JavaScript linter): <code>npm install -g eslint</code></li>
+<li>to install Sass lint: <code>npm install -g sass-lint</code></li>
+</ul>
+</li>
+<li>Install the linter plugin in your editing software
+<ul>
+<li>In <a href="https://code.visualstudio.com" target="_blank" rel="noopener">Visual Studio Code</a>, here is the <a href="https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint" target="_blank" rel="noopener">ESlint</a> package, and here is <a href="https://marketplace.visualstudio.com/items?itemName=glen-84.sass-lint" target="_blank" rel="noopener">Sass Lint</a> Package</li>
+<li>In Atom, here is the <a href="https://atom.io/packages/linter-eslint" target="_blank" rel="noopener">ESlint</a> package, and here the <a href="https://atom.io/packages/linter-sass-lint" target="_blank" rel="noopener">Sass Lint</a> Package</li>
+<li>In Sublime Text, here is <a href="https://github.com/polygonplanet/sublime-text-eslint" target="_blank" rel="noopener">ESlint</a> and here is <a href="https://github.com/skovhus/SublimeLinter-contrib-sass-lint" target="_blank" rel="noopener">Sass lint</a>.</li>
+</ul>
+</li>
+<li>Create a linting configuration file for each language you need to lint</li>
+<li>Restart your code editor just to be safe.</li>
+</ul>
+<h3>Wait, what are these linting configuration files?</h3>
+<p>Linters need configuration files in order to give instructions to our linters about how we want the linter to behave. To get started, you can use some default linter configurations, and when you grow more accustomed to their usage you can change these defaults. You have to place these config files in the <strong>root of your project</strong> for it to be recognised by the code editor.</p>
+<h3>How to create a linter configuration file?</h3>
+<h4>ESlint</h4>
+<p>Go to your project folder using your Terminal, and type:</p>
+<pre class=" language-bash"><code>eslint <span class="token operator">--</span>init </code></pre>
+<p>This will start a little program that will ask you a few questions. The first question you get is the following, just press enter to proceed.</p>
+<figure id="attachment_1133" style="width: 1498px" class="wp-caption alignnone"><img class="alignnone size-full wp-image-1133" src="https://alexmuraro.me/wp-content/uploads/2017/02/screen-shot-2017-02-04-at-13-15-59.png" alt="screen-shot-2017-02-04-at-13-15-59" width="1498" height="226" srcset="https://alexmuraro.me/wp-content/uploads/2017/02/screen-shot-2017-02-04-at-13-15-59.png 1498w, https://alexmuraro.me/wp-content/uploads/2017/02/screen-shot-2017-02-04-at-13-15-59-300x45.png 300w, https://alexmuraro.me/wp-content/uploads/2017/02/screen-shot-2017-02-04-at-13-15-59-768x116.png 768w, https://alexmuraro.me/wp-content/uploads/2017/02/screen-shot-2017-02-04-at-13-15-59-1024x154.png 1024w" sizes="(max-width: 1498px) 100vw, 1498px" /><figcaption class="wp-caption-text">Eslint wants answers</figcaption></figure>
+<p>Then you&#8217;ll be asked a bunch of additional question, choose whatever you want:</p>
+<figure id="attachment_1137" style="width: 1544px" class="wp-caption alignnone"><img class="alignnone size-full wp-image-1137" src="https://alexmuraro.me/wp-content/uploads/2017/02/screen-shot-2017-02-04-at-13-17-29.png" alt="screen-shot-2017-02-04-at-13-17-29" width="1544" height="528" srcset="https://alexmuraro.me/wp-content/uploads/2017/02/screen-shot-2017-02-04-at-13-17-29.png 1544w, https://alexmuraro.me/wp-content/uploads/2017/02/screen-shot-2017-02-04-at-13-17-29-300x103.png 300w, https://alexmuraro.me/wp-content/uploads/2017/02/screen-shot-2017-02-04-at-13-17-29-768x263.png 768w, https://alexmuraro.me/wp-content/uploads/2017/02/screen-shot-2017-02-04-at-13-17-29-1024x350.png 1024w" sizes="(max-width: 1544px) 100vw, 1544px" /><figcaption class="wp-caption-text">More eslint questions</figcaption></figure>
+<p>This will create a <em>.eslintrc.json</em> file which will look like this:</p>
+<figure id="attachment_1146" style="width: 356px" class="wp-caption alignnone"><img class="alignnone wp-image-1146" src="https://alexmuraro.me/wp-content/uploads/2017/02/screen-shot-2017-02-04-at-13-21-14.png" alt="screen-shot-2017-02-04-at-13-21-14" width="356" height="475" srcset="https://alexmuraro.me/wp-content/uploads/2017/02/screen-shot-2017-02-04-at-13-21-14.png 510w, https://alexmuraro.me/wp-content/uploads/2017/02/screen-shot-2017-02-04-at-13-21-14-225x300.png 225w" sizes="(max-width: 356px) 100vw, 356px" /><figcaption class="wp-caption-text">.eslintrc.json</figcaption></figure>
+<p>That&#8217;s it, you got a working ESlint configuration.</p>
+<h3>Sass lint</h3>
+<p>You can find a sample configuration file here <a href="https://github.com/sasstools/sass-lint/blob/master/docs/sass-lint.yml">on the official repository</a>. Download the file and add it to your root.</p>
+<h3>More linters</h3>
+<p>Linters are available for any coding language, and the installation steps are similar to these ones, although almost certainly slightly different.</p>
+<p><strong>Good luck!</strong></p>
+]]></content:encoded>
+			<wfw:commentRss>https://alexmuraro.me/posts/using-linters/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>
