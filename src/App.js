@@ -24,7 +24,7 @@ class App extends Component {
           <div className="layout">
             <Header />
             <div className="content">
-              <Routes posts={this.props.posts} />
+              <Routes />
             </div>
             <Footer />
           </div>
