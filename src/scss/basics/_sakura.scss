@@ -117,13 +117,8 @@ img {
 /* Pre and Code */
 pre,
 code {
-  background-color: get-color(blacks);
-  display: block;
-  overflow-x: auto;
-  padding: 1em;
-  max-width: 300px;
-  margin: 1em auto;
-  font-size: 0.875em;
+  margin: 2em auto !important;
+  font-size: 1.5rem;
 
   @media screen and (min-width: $small) {
     max-width: 400px;
@@ -132,12 +127,6 @@ code {
   @media screen and (min-width: $medium) {
     max-width: 550px;
   }
-}
-
-pre > code {
-  background-color: transparent;
-  padding: 0;
-  white-space: pre;
 }
 
 /* Tables */

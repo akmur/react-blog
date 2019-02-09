@@ -1,5 +1,6 @@
 import React from 'react'
 import dayjs from 'dayjs'
+import Prism from 'prismjs'
 import relativeTime from 'dayjs/plugin/relativeTime'
 import { Helmet } from 'react-helmet'
 dayjs.extend(relativeTime)
@@ -10,6 +11,10 @@ class Post extends React.Component {
   state = {
     post: { title: '', content: '', date: '' },
     loaded: false
+  }
+
+  triggerPrism() {
+    Prism.highlightAll()
   }
 
   componentDidMount() {
@@ -27,6 +32,7 @@ class Post extends React.Component {
           hasThumbnail,
           loaded: true
         })
+        this.triggerPrism()
       })
   }
 
