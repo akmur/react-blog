@@ -121,6 +121,8 @@ code {
   display: block;
   overflow-x: auto;
   padding: 1em;
+  max-width: 550px;
+  margin: 0 auto;
 }
 
 pre > code {
