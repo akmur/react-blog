@@ -115,19 +115,29 @@ img {
 }
 
 /* Pre and Code */
-pre,
 code {
   margin: 2em auto !important;
   font-size: 1.5rem;
+}
+
+pre {
+  max-width: 290px !important;
+  margin: 1em auto !important;
 
   @media screen and (min-width: $small) {
-    max-width: 400px;
+    max-width: 400px !important;
+    margin: 1em auto !important;
   }
 
   @media screen and (min-width: $medium) {
-    max-width: 550px;
+    max-width: 550px !important;
+  }
+
+  @media screen and (min-width: $large) {
+    max-width: 650px !important;
   }
 }
+
 
 /* Tables */
 table {
