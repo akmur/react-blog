@@ -1,20 +1,9 @@
 import React from 'react'
-import { Helmet } from 'react-helmet'
 
 const About = () => {
+  document.title = 'About - Alessandro Muraro - Frontend Developer'
   return (
     <div className="pageContent">
-      <Helmet>
-        <title>About - Alessandro Muraro - Frontend Developer</title>
-        <meta
-          name="description"
-          content="I am a frontend developer currently based in Aachen, Germany. I do websites."
-        />
-        <meta
-          name="og:image"
-          content="https://akmur.files.wordpress.com/2019/02/site-image.jpg"
-        />
-      </Helmet>
       <div className="contentBlock">
         <h2 className="contentBlock__title">Who I am</h2>
         <div className="contentBlock__description">

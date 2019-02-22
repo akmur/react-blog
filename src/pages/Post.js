@@ -2,10 +2,18 @@ import React from 'react'
 import dayjs from 'dayjs'
 import Prism from 'prismjs'
 import relativeTime from 'dayjs/plugin/relativeTime'
-import { Helmet } from 'react-helmet'
 dayjs.extend(relativeTime)
 
 const striptags = require('striptags')
+
+function truncate(str, no_words) {
+  return (
+    str
+      .split(' ')
+      .splice(0, no_words)
+      .join(' ') + ' [...]'
+  )
+}
 
 class Post extends React.Component {
   state = {
@@ -32,33 +40,39 @@ class Post extends React.Component {
           hasThumbnail,
           loaded: true
         })
+
+        document.title = `${
+          this.state.post.title.rendered
+        } - Alessandro Muraro - Frontend Developer`
+
+        document
+          .querySelector('meta[name="description"]')
+          .setAttribute(
+            'content',
+            truncate(striptags(this.state.post.content.rendered, [], '\n'), 50)
+          )
+
+        this.state.hasThumbnail
+          ? document
+              .querySelector('meta[name="og:image"]')
+              .setAttribute(
+                'content',
+                this.state.post._embedded['wp:featuredmedia'][0].source_url
+              )
+          : document
+              .querySelector('meta[name="og:image"]')
+              .setAttribute(
+                'content',
+                'https://filedn.com/lmWxu5DGgw0FbsUS7mWpc3S/site-image.jpg'
+              )
+
         this.triggerPrism()
       })
   }
 
   render() {
-    let metaTitle, metaDescription
-    if (this.state.loaded) {
-      metaTitle = `${
-        this.state.post.title.rendered
-      } - Alessandro Muraro - Frontend Developer`
-      metaDescription = `${striptags(
-        this.state.post.content.rendered,
-        [],
-        '\n'
-      )}`
-    }
-
     return (
       <div className="pageContent pageContent--post">
-        <Helmet>
-          <title>{metaTitle}</title>
-          <meta name="description" content={metaDescription} />
-          <meta
-            name="og:image"
-            content="https://akmur.files.wordpress.com/2019/02/site-image.jpg"
-          />
-        </Helmet>
         {this.state.loaded ? (
           ''
         ) : (
