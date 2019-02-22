@@ -11,29 +11,16 @@ class Posts extends Component {
   }
 
   componentDidMount() {
-    const storedJson = sessionStorage.getItem('postsList')
-
     document.title = `Posts - Alessandro Muraro - Frontend Developer`
 
-    if (storedJson) {
-      this.setState({
-        posts: JSON.parse(storedJson),
-        loaded: true
-      })
-    } else {
-      fetch('https://muraro.xyz/wp/wp-json/wp/v2/posts?per_page=100')
-        .then(response => {
-          return response.json()
-        })
-        .then(posts => {
-          sessionStorage.setItem('postsList', JSON.stringify(posts))
-          this.setState({
-            posts,
-            loaded: true
-          })
-        })
-    }
+    const storedJson = sessionStorage.getItem('postsList')
+
+    this.setState({
+      posts: JSON.parse(storedJson),
+      loaded: true
+    })
   }
+
   render() {
     return (
       <div className="postsList">

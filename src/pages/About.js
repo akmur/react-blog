@@ -2,6 +2,7 @@ import React from 'react'
 
 const About = () => {
   document.title = 'About - Alessandro Muraro - Frontend Developer'
+
   return (
     <div className="pageContent">
       <div className="contentBlock">
