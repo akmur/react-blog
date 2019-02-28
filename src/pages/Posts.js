@@ -55,15 +55,23 @@ class Posts extends Component {
       <div className="postsList">
         <ul className="postsList__list">
           {this.state.loaded ? (
-            <div className="loading">
-              <div role="img" class="loadingEmoji" aria-label="running man">
-                {this.state.emoji}
-              </div>{' '}
-              Loading...
-            </div>
+            this.state.posts.map((post, index) => (
+              <li className="postsList__item" key={index}>
+                <Link
+                  className="postsList__link"
+                  state={{ id: post.id }}
+                  to={`/posts/${post.id}/${post.slug}`}
+                >
+                  <h2 className="postsList__title">{post.title.rendered}</h2>
+                  <span className="postsList__date">
+                    {dayjs().to(dayjs(post.date))}
+                  </span>
+                </Link>
+              </li>
+            ))
           ) : (
             <div className="loading">
-              <div role="img" class="loadingEmoji" aria-label="running man">
+              <div role="img" className="loadingEmoji" aria-label="running man">
                 {this.state.emoji}
               </div>{' '}
               Loading...
