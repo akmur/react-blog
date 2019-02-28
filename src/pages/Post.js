@@ -18,19 +18,33 @@ function truncate(str, no_words) {
 class Post extends React.Component {
   state = {
     post: { title: '', content: '', date: '' },
-    loaded: false
+    loaded: false,
+    emoji: ''
   }
 
   triggerPrism() {
     Prism.highlightAll()
   }
 
+  setEmoji(chosenEmoji) {
+    this.setState({
+      emoji: chosenEmoji
+    })
+  }
+
   componentDidMount() {
+    const emojis = ['🐶', '😅', '🏃‍♂️', '🤦‍♀️', '🤔', '🚀', '⚛️']
+    this.setEmoji(emojis[Math.floor(Math.random() * emojis.length)])
+    const nIntervId = setInterval(() => {
+      this.setEmoji(emojis[Math.floor(Math.random() * emojis.length)])
+    }, 500)
+
     fetch(`https://muraro.xyz/wp/wp-json/wp/v2/posts/${this.props.id}?_embed`)
       .then(response => {
         return response.json()
       })
       .then(post => {
+        clearInterval(nIntervId)
         const hasThumbnail =
           typeof post._embedded['wp:featuredmedia'] === 'undefined'
             ? false
@@ -77,9 +91,9 @@ class Post extends React.Component {
           ''
         ) : (
           <div className="loading">
-            <span role="img" aria-label="running man">
-              🏃‍♂️
-            </span>{' '}
+            <div className="loadingEmoji" role="img" aria-label="running man">
+              {this.state.emoji}
+            </div>{' '}
             Loading...
           </div>
         )}
