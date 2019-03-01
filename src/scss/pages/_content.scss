@@ -12,6 +12,14 @@
   }
 }
 
+.pageContent__content iframe {
+  display: none;
+
+  @media (min-width: $medium) {
+    display: block;
+  }
+}
+
 .pageContent__content {
   font-size: 1.8rem;
 
