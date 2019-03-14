@@ -117,7 +117,11 @@ img {
 /* Pre and Code */
 code {
   margin: 2em auto !important;
-  font-size: 1.5rem;
+  font-size: 1.25rem;
+
+  @media (min-width: $medium) {
+    font-size: 1.5rem;
+  }
 }
 
 pre {

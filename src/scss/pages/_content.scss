@@ -48,3 +48,11 @@
     margin-right: -4em;
   }
 }
+
+.pageContent__content pre {
+  max-width: 260px !important;
+
+  @media (min-width: $small) {
+    max-width: 100% !important;
+  }
+}
